@@ -14,7 +14,7 @@
     </TargetFrameworkProfile>
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
     <XnaPlatform>Windows</XnaPlatform>
-    <XnaProfile>HiDef</XnaProfile>
+    <XnaProfile>Reach</XnaProfile>
     <XnaCrossPlatformGroupID>6e8472f3-363d-4b52-a484-aa934eebcf1f</XnaCrossPlatformGroupID>
     <XnaOutputType>Game</XnaOutputType>
     <ApplicationIcon>Game.ico</ApplicationIcon>
@@ -250,6 +250,14 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Apache.NMS.Stomp\vs2013-stomp-android.csproj">
+      <Project>{ddc72862-2d1f-41c1-b4a2-f190e36ef235}</Project>
+      <Name>vs2013-stomp-android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Apache.NMS\vs2013-nms-android.csproj">
+      <Project>{a383bbde-035d-4cb8-aab2-9ef1ab797915}</Project>
+      <Name>vs2013-nms-android</Name>
+    </ProjectReference>
     <ProjectReference Include="..\StarBlasterContent\StarBlasterContent.contentproj">
       <Project>{64B23BEF-DD26-4B81-AAA6-D9F46B0140B4}</Project>
       <Name>StarBlasterContent %28Content%29</Name>

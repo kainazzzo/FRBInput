@@ -25,8 +25,6 @@
       </ReferencedFiles>
       <NamedObjects>
         <NamedObjectSave>
-          <Properties>
-          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\Background</SourceClassType>
           <InstanceName>BackgroundInstance</InstanceName>
@@ -36,8 +34,6 @@
           <LayerOn>Under Everything (Engine Layer)</LayerOn>
         </NamedObjectSave>
         <NamedObjectSave>
-          <Properties>
-          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceClassType>PositionedObjectList&lt;T&gt;</SourceClassType>
           <SourceClassGenericType>Entities\PlayerShip</SourceClassGenericType>
@@ -47,8 +43,6 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
-          <Properties>
-          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceClassType>PositionedObjectList&lt;T&gt;</SourceClassType>
           <SourceClassGenericType>Entities\EnemyShip</SourceClassGenericType>
@@ -58,32 +52,6 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
-          <Properties>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceClassType>PositionedObjectList&lt;T&gt;</SourceClassType>
           <SourceClassGenericType>Entities\Bullet</SourceClassGenericType>
@@ -93,32 +61,6 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
-          <Properties>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceClassType>PositionedObjectList&lt;T&gt;</SourceClassType>
           <SourceClassGenericType>Entities\Bullet</SourceClassGenericType>
@@ -128,14 +70,6 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
-          <Properties>
-
-
-
-
-
-
-          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\Explosion</SourceClassType>
           <InstanceName>ExplosionInstance</InstanceName>
@@ -202,6 +136,7 @@
           <Type>float</Type>
         </CustomVariable>
       </CustomVariables>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Name>Entities\Asteroid</Name>
       <Is2D>true</Is2D>
     </EntitySave>
@@ -266,35 +201,10 @@
           <SourceObjectProperty>TextureScale</SourceObjectProperty>
         </CustomVariable>
       </CustomVariables>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Name>Entities\Background</Name>
       <NamedObjects>
         <NamedObjectSave>
-          <Properties>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </Properties>
           <CustomProperty>
             <Type>Texture2D</Type>
             <Member>Texture</Member>
@@ -368,31 +278,15 @@
           <Type>float</Type>
         </CustomVariable>
       </CustomVariables>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Name>Entities\Bullet</Name>
       <NamedObjects>
         <NamedObjectSave>
-          <Properties>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </Properties>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
           <CustomProperty>
             <Type>AnimationChainList</Type>
             <Member>AnimationChains</Member>
@@ -402,11 +296,6 @@
             <Type>string</Type>
             <Member>CurrentChainName</Member>
             <ValueAsString>PlayerBullet</ValueAsString>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1</ValueAsFloat>
           </CustomProperty>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
@@ -418,26 +307,11 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
-          <Properties>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </Properties>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Width</Member>
+            <ValueAsFloat>4</ValueAsFloat>
+          </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
             <Member>Height</Member>
@@ -447,11 +321,6 @@
             <Type>bool</Type>
             <Member>Visible</Member>
             <ValueAsBool>false</ValueAsBool>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Width</Member>
-            <ValueAsFloat>4</ValueAsFloat>
           </CustomProperty>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
@@ -636,29 +505,15 @@
           <CreatesEvent>true</CreatesEvent>
         </CustomVariable>
       </CustomVariables>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Name>Entities\EnemyShip</Name>
       <NamedObjects>
         <NamedObjectSave>
-          <Properties>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </Properties>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Y</Member>
+            <ValueAsFloat>-2</ValueAsFloat>
+          </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
             <Member>Radius</Member>
@@ -668,11 +523,6 @@
             <Type>bool</Type>
             <Member>Visible</Member>
             <ValueAsBool>false</ValueAsBool>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Y</Member>
-            <ValueAsFloat>-2</ValueAsFloat>
           </CustomProperty>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
@@ -686,26 +536,11 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
-          <Properties>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </Properties>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Y</Member>
+            <ValueAsFloat>-2</ValueAsFloat>
+          </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
             <Member>Radius</Member>
@@ -715,11 +550,6 @@
             <Type>bool</Type>
             <Member>Visible</Member>
             <ValueAsBool>false</ValueAsBool>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Y</Member>
-            <ValueAsFloat>-2</ValueAsFloat>
           </CustomProperty>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
@@ -733,26 +563,11 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
-          <Properties>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </Properties>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
           <CustomProperty>
             <Type>AnimationChainList</Type>
             <Member>AnimationChains</Member>
@@ -762,11 +577,6 @@
             <Type>string</Type>
             <Member>CurrentChainName</Member>
             <ValueAsString>Boss</ValueAsString>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1</ValueAsFloat>
           </CustomProperty>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
@@ -778,6 +588,11 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <CustomProperty>
+            <Type>bool</Type>
+            <Member>Visible</Member>
+            <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
           <CustomProperty>
             <Member>Points</Member>
             <ValueAsListOfVector2>
@@ -827,11 +642,6 @@
               </Vector2>
             </ValueAsListOfVector2>
           </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>Visible</Member>
-            <ValueAsBool>false</ValueAsBool>
-          </CustomProperty>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -844,6 +654,11 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <CustomProperty>
+            <Type>bool</Type>
+            <Member>Visible</Member>
+            <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
           <CustomProperty>
             <Member>Points</Member>
             <ValueAsListOfVector2>
@@ -892,11 +707,6 @@
                 <Y>75</Y>
               </Vector2>
             </ValueAsListOfVector2>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>Visible</Member>
-            <ValueAsBool>false</ValueAsBool>
           </CustomProperty>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
@@ -965,17 +775,10 @@
           <Type>float</Type>
         </CustomVariable>
       </CustomVariables>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Name>Entities\Explosion</Name>
       <NamedObjects>
         <NamedObjectSave>
-          <Properties>
-
-
-
-
-
-
-          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -1034,6 +837,7 @@
           <Type>float</Type>
         </CustomVariable>
       </CustomVariables>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Name>Entities\Planet</Name>
       <ReferencedFiles>
         <ReferencedFileSave>
@@ -1133,35 +937,15 @@
           <DefaultValue xsi:type="xsd:float">0.05</DefaultValue>
         </CustomVariable>
       </CustomVariables>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Name>Entities\PlayerShip</Name>
       <NamedObjects>
         <NamedObjectSave>
-          <Properties>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </Properties>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
           <CustomProperty>
             <Type>AnimationChainList</Type>
             <Member>AnimationChains</Member>
@@ -1171,11 +955,6 @@
             <Type>string</Type>
             <Member>CurrentChainName</Member>
             <ValueAsString>MainPlayer</ValueAsString>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1</ValueAsFloat>
           </CustomProperty>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
@@ -1187,32 +966,21 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
-          <Properties>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </Properties>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>X</Member>
+            <ValueAsFloat>-27.5</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Y</Member>
+            <ValueAsFloat>-12</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
           <CustomProperty>
             <Type>AnimationChainList</Type>
             <Member>AnimationChains</Member>
@@ -1224,24 +992,9 @@
             <ValueAsString>LeftGun</ValueAsString>
           </CustomProperty>
           <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
             <Type>bool</Type>
             <Member>UseAnimationRelativePosition</Member>
             <ValueAsBool>false</ValueAsBool>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>X</Member>
-            <ValueAsFloat>-27.5</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Y</Member>
-            <ValueAsFloat>-12</ValueAsFloat>
           </CustomProperty>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
@@ -1253,33 +1006,21 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
-          <Properties>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </Properties>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>X</Member>
+            <ValueAsFloat>27.5</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Y</Member>
+            <ValueAsFloat>-12</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
           <CustomProperty>
             <Type>AnimationChainList</Type>
             <Member>AnimationChains</Member>
@@ -1291,24 +1032,9 @@
             <ValueAsString>RightGun</ValueAsString>
           </CustomProperty>
           <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
             <Type>bool</Type>
             <Member>UseAnimationRelativePosition</Member>
             <ValueAsBool>false</ValueAsBool>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>X</Member>
-            <ValueAsFloat>27.5</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Y</Member>
-            <ValueAsFloat>-12</ValueAsFloat>
           </CustomProperty>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
@@ -1320,14 +1046,6 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
-          <Properties>
-
-
-
-
-
-
-          </Properties>
           <CustomProperty>
             <Type>float</Type>
             <Member>Radius</Member>
@@ -1398,7 +1116,9 @@
     <LoadAsynchronously>false</LoadAsynchronously>
     <RecordLockContention>false</RecordLockContention>
   </GlobalContentSettingsSave>
-  <SyncedProjects />
+  <SyncedProjects>
+    <string>../../StarBlasterAndroid/StarBlasterAndroid/StarBlasterAndroid.csproj</string>
+  </SyncedProjects>
   <StartUpScreen>Screens\GameScreen</StartUpScreen>
   <ResolutionPresets />
   <PerformanceSettingsSave>
@@ -1434,4 +1154,7 @@
   <TranslatedFiles />
   <ApplyToFixedResolutionPlatforms>true</ApplyToFixedResolutionPlatforms>
   <ExternallyBuiltFileDirectory>../../</ExternallyBuiltFileDirectory>
+  <PluginData>
+    <RequiredPlugins />
+  </PluginData>
 </GlueProjectSave>
