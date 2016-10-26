@@ -9,8 +9,11 @@
     <Import_RootNamespace>ExternalInputShared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Float1DInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)QueueConsumer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QueuedFloat1DInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)QueuedVector2DInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QueuedVector3DInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Vector2DInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Vector3DInput.cs" />
   </ItemGroup>
