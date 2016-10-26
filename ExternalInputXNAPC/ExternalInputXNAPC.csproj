@@ -47,6 +47,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Apache.NMS.Stomp\vs2008-stomp.csproj">
+      <Project>{aa51947c-1370-44dc-8692-1c8efc5945f7}</Project>
+      <Name>vs2008-stomp</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Apache.NMS\vs2010-nms-net4.0.csproj">
       <Project>{66c0c9a8-2782-4c98-9acb-74f720570dd9}</Project>
       <Name>vs2010-nms-net4.0</Name>

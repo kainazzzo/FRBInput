@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using ExternalInputShared;
 using FlatRedBall;
 using FlatRedBall.Input;
 using FlatRedBall.Instructions;
@@ -138,9 +139,12 @@ namespace StarBlaster.Entities
 
         internal void AddKeyboardControls()
         {
-            movementInput = InputManager.Keyboard.Get2DInput(Keys.A, Keys.D, Keys.W, Keys.S);
+            //movementInput = InputManager.Keyboard.Get2DInput(Keys.A, Keys.D, Keys.W, Keys.S);
 
-            shootInput = InputManager.Keyboard.GetKey(Keys.Space);
+            //shootInput = InputManager.Keyboard.GetKey(Keys.Space);
+
+            movementInput = new QueuedVector2DInput();
+            shootInput = new QueuedPressableInput();
         }
 
         private static void CustomLoadStaticContent(string contentManagerName)

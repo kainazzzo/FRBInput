@@ -1,5 +1,6 @@
 using System;
 using Apache.NMS;
+using Apache.NMS.Stomp;
 
 namespace ExternalInputShared
 {
@@ -13,7 +14,7 @@ namespace ExternalInputShared
         public QueueConsumer(string destinationName)
         {
             // TODO: Auto discovery
-            IConnectionFactory factory = new NMSConnectionFactory("tcp://localhost:61616");
+            IConnectionFactory factory = new ConnectionFactory("tcp://localhost:61613");
             _connection = factory.CreateConnection();
             _connection.Start();
             _session = _connection.CreateSession();

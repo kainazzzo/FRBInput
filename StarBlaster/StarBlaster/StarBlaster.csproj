@@ -250,13 +250,17 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Apache.NMS.Stomp\vs2013-stomp-android.csproj">
-      <Project>{ddc72862-2d1f-41c1-b4a2-f190e36ef235}</Project>
-      <Name>vs2013-stomp-android</Name>
+    <ProjectReference Include="..\..\Apache.NMS.Stomp\vs2008-stomp.csproj">
+      <Project>{aa51947c-1370-44dc-8692-1c8efc5945f7}</Project>
+      <Name>vs2008-stomp</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Apache.NMS\vs2013-nms-android.csproj">
-      <Project>{a383bbde-035d-4cb8-aab2-9ef1ab797915}</Project>
-      <Name>vs2013-nms-android</Name>
+    <ProjectReference Include="..\..\Apache.NMS\vs2010-nms-net4.0.csproj">
+      <Project>{66c0c9a8-2782-4c98-9acb-74f720570dd9}</Project>
+      <Name>vs2010-nms-net4.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ExternalInputXNAPC\ExternalInputXNAPC.csproj">
+      <Project>{41b5ba92-dc4d-4daa-8a0b-a55ebf3e2cb3}</Project>
+      <Name>ExternalInputXNAPC</Name>
     </ProjectReference>
     <ProjectReference Include="..\StarBlasterContent\StarBlasterContent.contentproj">
       <Project>{64B23BEF-DD26-4B81-AAA6-D9F46B0140B4}</Project>
