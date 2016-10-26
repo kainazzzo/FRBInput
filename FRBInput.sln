@@ -19,9 +19,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vs2010-nms-net4.0", "Apache
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vs2008-stomp", "Apache.NMS.Stomp\vs2008-stomp.csproj", "{AA51947C-1370-44DC-8692-1C8EFC5945F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalInputAndroid", "ExternalInputAndroid\ExternalInputAndroid.csproj", "{A36C8BF7-6FA1-453B-AB3C-063F288512B2}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		ExternalInputShared\ExternalInputShared.projitems*{41b5ba92-dc4d-4daa-8a0b-a55ebf3e2cb3}*SharedItemsImports = 4
+		ExternalInputShared\ExternalInputShared.projitems*{a36c8bf7-6fa1-453b-ab3c-063f288512b2}*SharedItemsImports = 4
 		ExternalInputShared\ExternalInputShared.projitems*{e9e641cd-59ee-43e7-a51a-99a87781afa9}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -82,6 +85,14 @@ Global
 		{AA51947C-1370-44DC-8692-1C8EFC5945F7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AA51947C-1370-44DC-8692-1C8EFC5945F7}.Release|x86.ActiveCfg = Release|Any CPU
 		{AA51947C-1370-44DC-8692-1C8EFC5945F7}.Release|x86.Build.0 = Release|Any CPU
+		{A36C8BF7-6FA1-453B-AB3C-063F288512B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A36C8BF7-6FA1-453B-AB3C-063F288512B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A36C8BF7-6FA1-453B-AB3C-063F288512B2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A36C8BF7-6FA1-453B-AB3C-063F288512B2}.Debug|x86.Build.0 = Debug|Any CPU
+		{A36C8BF7-6FA1-453B-AB3C-063F288512B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A36C8BF7-6FA1-453B-AB3C-063F288512B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A36C8BF7-6FA1-453B-AB3C-063F288512B2}.Release|x86.ActiveCfg = Release|Any CPU
+		{A36C8BF7-6FA1-453B-AB3C-063F288512B2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
