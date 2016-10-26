@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Apache.NMS">
-      <HintPath>..\Apache.NMS\build\net-4.0\debug\Apache.NMS.dll</HintPath>
-    </Reference>
     <Reference Include="FlatRedBall">
       <HintPath>..\StarBlaster\StarBlaster\Libraries\Xna4Pc\Debug\FlatRedBall.dll</HintPath>
     </Reference>
@@ -48,6 +45,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Apache.NMS\vs2010-nms-net4.0.csproj">
+      <Project>{66c0c9a8-2782-4c98-9acb-74f720570dd9}</Project>
+      <Name>vs2010-nms-net4.0</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\ExternalInputShared\ExternalInputShared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

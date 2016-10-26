@@ -5,28 +5,18 @@ namespace ExternalInputShared
 {
     public class QueuedVector2DInput : Vector2DInput, IDisposable
     {
-        private readonly ISession _session;
-        private readonly IConnection _connection;
-        private readonly IQueue _destination;
-        private readonly IMessageConsumer _consumer;
+        private readonly QueueConsumer _queueConsumer;
 
         public QueuedVector2DInput()
         {
-            IConnectionFactory factory = new NMSConnectionFactory("tcp://localhost:61616");
-            _connection = factory.CreateConnection();
-            _connection.Start();
-            _session = _connection.CreateSession();
-            _destination = _session.GetQueue("I2DInput");
-            _consumer = _session.CreateConsumer(_destination);
-            _consumer.Listener += ConsumerOnListener;
+            _queueConsumer = new QueueConsumer("I2DInput");
+
+            _queueConsumer.Listener += ConsumerOnListener;
         }
+
         public void Dispose()
         {
-            _consumer.Close();
-            _session.DeleteDestination(_destination);
-            _session.Close();
-            _connection.Stop();
-            _connection.Close();
+            _queueConsumer.Dispose();
         }
 
         private void ConsumerOnListener(IMessage message)
