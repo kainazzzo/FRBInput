@@ -97,6 +97,7 @@ namespace StarBlaster.Entities
                 this.YAcceleration = yAccelerationSign * (MaxMovementSpeed / AccelerationTime);
             }
 
+            FlatRedBall.Debugging.Debugger.CommandLineWrite($"{movementInput.X}, {movementInput.Y}");
 
             if (this.shootInput.WasJustPressed)
             {
@@ -145,6 +146,8 @@ namespace StarBlaster.Entities
 
             movementInput = new QueuedVector2DInput();
             shootInput = new QueuedPressableInput();
+
+            
         }
 
         private static void CustomLoadStaticContent(string contentManagerName)
